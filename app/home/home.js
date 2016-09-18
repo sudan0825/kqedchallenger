@@ -13,10 +13,13 @@ angular.module('myApp.home', ['ngRoute'])
 
 
   $scope.stories=[];
-
-
-  $http.get( 'http://api.npr.org/query?requiredAssets=text,image,audio&output=JSON&apiKey=MDI2NTE0OTQ5MDE0NzM3NDc0NDcyZGExMA000'
-  ).then(function successCallback(response) {
+  $http({
+    method: 'GET',
+    url: 'http://api.npr.org/query?requiredAssets=text,image,audio&output=JSON&apiKey=MDI2NTE0OTQ5MDE0NzM3NDc0NDcyZGExMA000',
+    headers: {
+      'Content-Type': undefined
+    }
+  }).then(function successCallback(response) {
 
     // this callback will be called asynchronously
     // when the response is available

@@ -2,7 +2,9 @@
 #WebName{
   margin: 20px;
 }
-
+h1{
+  display: inline-block;
+}
 #challenger{
   display: inline-block;
   color: transparent;
