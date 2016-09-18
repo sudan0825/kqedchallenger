@@ -1,0 +1,162 @@
+/* app css stylesheet for index.html*/
+#WebName{
+  margin: 20px;
+}
+
+#challenger{
+  display: inline-block;
+  color: transparent;
+  -webkit-animation: mymove 15s infinite; /* Chrome, Safari, Opera */
+  animation: mymove 15s infinite;
+  padding-left: 20px;
+
+
+}
+
+/* Chrome, Safari, Opera change Chanllenger Collor*/
+@-webkit-keyframes mymove {
+
+  20% {text-shadow: 0px 0px  0px blue;
+  }
+  40% {text-shadow: 0px 0px  0px red;
+  }
+  60% {text-shadow: 0px 0px  0px green;
+  }
+  80% {text-shadow: 0px 0px  0px yellow;
+  }
+
+
+}
+/* Standard syntax */
+@keyframes mymove {
+
+
+  25% {text-shadow: 0px 0px  0px orange;
+  }
+  50% {text-shadow: 0px 0px  0px purple;
+  }
+  75% {text-shadow: 0px 0px  0px green;
+  }
+}
+
+
+.mycontainer{
+  margin-left: 15%;
+  margin-right:15%;
+}
+
+
+
+/* app css stylesheet for home.html*/
+#homeContainer{
+
+}
+h4{
+  display: inline-block;
+}
+.storyWrap{
+  margin:10px 0;
+  height: 380px;
+  background-color:white;
+  border-radius: 6px;
+}
+.storyContent{
+  margin: 10px 10px;
+  width: 45%;
+  height: inherit;
+  display: inline-block;
+}
+.storyFigure{
+  margin: 10px 10px;
+  width: 400px;
+  height: 360px;
+  float: right;
+  display: inline-block;
+
+}
+
+
+.imgThumbnail {
+  display: inline-block;
+  width: 100%;
+  min-height: 50px;
+  max-height: 280px;
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+
+
+/* app css stylesheet for music.html*/
+
+#musicWrapper{
+  width: inherit;
+}
+.leftDiv{
+  position: relative;
+  padding: 10px 10px;
+  width: 45%;
+  height: 350px;
+  display: inline-block;
+
+
+}
+.rightDiv{
+ position: relative;
+  padding: 10px 10px;
+  width: 45%;
+  height: 350px;
+  float: right;
+  display: inline-block;
+
+
+}
+
+.musicImg{
+  width: 330px;
+  height: 250px;
+
+}
+.playTitle{
+  padding: 10px 0;
+}
+.musicTitle{
+  display: inline-block;
+  padding: 0 6px;
+}
+.musicLink{
+  color: black;
+}
+
+#bluryDiv{
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index:1001;
+  -moz-opacity: 0.8;
+  opacity:.80;
+  filter: alpha(opacity=80);
+}
+#showDiv{
+  display: none;
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  width: 25%;
+  height: 30%;
+  padding: 16px;
+  border: 5px solid orange;
+  background-color: white;
+  z-index:1002;
+  overflow: auto;
+}

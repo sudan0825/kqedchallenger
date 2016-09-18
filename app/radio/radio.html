@@ -1,0 +1,29 @@
+
+<h2 class="sub-header">Radio</h2>
+<div class="table-responsive" ng-controller="radioCtrl">
+  <table class="table table-bordered">
+    <thead>
+    <tr>
+      <th>Time</th>
+      <th>{{station}}</th>
+
+    </tr>
+    </thead>
+    <tbody >
+    <tr ng-repeat="x in radios.story">
+      <td> {{x.storyDate.$text}}</td>
+      <td > {{x.title.$text}}
+        <a href={{x.link[0].$text}} target="_blank">
+          <button class="glyphicon glyphicon-play" style="float: right">
+          </button>
+        </a>
+     </td>
+
+
+    </tr>
+
+
+
+    </tbody>
+  </table>
+  </div>

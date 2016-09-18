@@ -1,0 +1,37 @@
+
+<div id="musicWrapper" ng-repeat="x in music.story " >
+  <div class="leftDiv" ng-if="$odd">
+
+
+        <img class="musicImg"  ng-click="playMP3(x.link[0].$text)" src={{x.image[0].src}}>
+
+
+    <div class="playTitle">
+
+      <button style="margin-right: 5px" ng-click="playMP3(x.link[0].$text)" class="glyphicon glyphicon-play"></button>
+
+
+
+      {{x.title.$text}}
+
+
+  </div>
+
+  </div>
+  <div class="rightDiv" ng-if="$even">
+
+      <img class="musicImg"  ng-click="playMP3(x.link[0].$text)" src={{x.image[0].src}}>
+
+    <div class="playTitle">
+
+    <button style="margin-right: 5px" ng-click="playMP3(x.audio[0].format.mp3[0].$text)" class="glyphicon glyphicon-play"></button>
+
+
+      {{x.title.$text}}
+
+    </div>
+
+  </div>
+  <div id="bluryDiv" ng-click="hideShow(x.link[0].$text)"></div>
+  <div id="showDiv"  ng-click="linkToHTML(x.link[0].$text)" ></div>
+</div>

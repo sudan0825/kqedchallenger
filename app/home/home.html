@@ -1,0 +1,17 @@
+<div id="homeContainer" ng-controller="homeCtrl">
+
+
+
+
+  <div class="storyWrap" ng-repeat="x in stories.story" >
+    <a href={{x.link[0].$text}}>
+  <div class="storyContent"><h4>{{x.title.$text}}</h4>
+  <p>{{x.storyDate.$text}}</p>
+    <p>{{x.teaser.$text}}</p>
+  </div>
+    <div class="storyFigure"><img class="imgThumbnail" src={{x.image[0].src}}></div>
+    </a>
+  </div>
+
+
+</div>
