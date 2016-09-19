@@ -17,7 +17,7 @@ class RestHandler(webapp2.RequestHandler):
 
 APP = webapp2.WSGIApplication([
 
-  ('/', RestHandler),
+  ('/rest/', RestHandler),
 
 ], debug=True)
 
