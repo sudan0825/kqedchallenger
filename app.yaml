@@ -6,14 +6,12 @@ api_version: 1
 
 
 handlers:
-- url: /favicon\.ico
-  static_files: favicon.ico
-  upload: favicon\.ico
+
 
 - url: /rest/.*
   script: main.APP
 
-- url: (.*)
+- url: (.*)/
   static_files: app\1/index.html
   upload: app
 
