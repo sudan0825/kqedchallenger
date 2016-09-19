@@ -13,6 +13,7 @@ handlers:
 
 
 
+
 - url: (.*)/
   static_files: app\1/index.html
   upload: app
@@ -22,9 +23,8 @@ handlers:
   static_files: app\1
   upload: app
 
-- url: (.*)
-  static_files: \1
-  upload: app
+- url: .*
+  script: app
 
 
 libraries:
@@ -32,6 +32,8 @@ libraries:
     version: "2.6"
   - name: markupsafe
     version: "0.15"
+  - name: webapp2
+    version: "2.5.2"
 
 
 
