@@ -14,12 +14,12 @@ handlers:
 - url: (.*)/
   static_files: app\1/index.html
   upload: app
-
+  mime_type: application/octet-stream
 
 - url: (.*)
   static_files: app\1
   upload: app
-
+   mime_type: application/octet-stream
 
 libraries:
   - name: jinja2
