@@ -14,6 +14,8 @@ angular.module('myApp.music', ['ngRoute'])
     $http({
       method: 'GET',
       url: 'http://api.npr.org/query?id=13&requiredAssets=text,image,audio&output=JSON&apiKey=MDI2NTE0OTQ5MDE0NzM3NDc0NDcyZGExMA000',
+      crossDomain:true,
+      dataType:'jsonp',
       headers: {
         'Content-Type': undefined
       }

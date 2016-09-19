@@ -15,9 +15,12 @@ angular.module('myApp.radio', ['ngRoute'])
   $http({
     method: 'GET',
     url: 'http://api.npr.org/query?id=3004&requiredAssets=audio&dateType=story&output=JSON&apiKey=MDI2NTE0OTQ5MDE0NzM3NDc0NDcyZGExMA000',
+    crossDomain:true,
+    dataType:'jsonp',
     headers: {
       'Content-Type': undefined
     }
+
 
   }).then(function successCallback(response) {
     // this callback will be called asynchronously
