@@ -5,10 +5,11 @@ Python, AWS and Google Engine.
  
 This project was accomplished within 3 hours, but deploment it to Google Engine 
 demands me more than 2 days. Now it still works only in local Google engine. 
-At the last, I deploy it onto AWS. Here is the link: 
+
+So, I deploy it onto AWS. Here is the link: 
 http://ec2-52-24-186-195.us-west-2.compute.amazonaws.com/kqedchallenger/app/#!/home
 
-The other consume part is to understand data structure of JSON files from NPR API. 
+The other consume time part is to understand data structure of JSON files from NPR API. 
 I tried to find Geolocation data, but NPR does not provide that API.  
 
 The showing part I want to talk about is "Fresh air" page. When you click on a content, 
