@@ -5,6 +5,7 @@ threadsafe: true
 api_version: 1
 
 
+
 handlers:
 
 - url: /rest/.*
@@ -13,7 +14,7 @@ handlers:
 - url: (.*)/
   static_files: app\1/index.html
   upload: app
-  mime_type: application/octet-stream
+
 
 - url: (.*)
   static_files: app\1
