@@ -22,7 +22,7 @@ handlers:
   static_files: app\1
   upload: app
 
-  libraries:
+libraries:
   - name: jinja2
     version: "2.6"
   - name: markupsafe
