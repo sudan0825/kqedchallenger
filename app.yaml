@@ -13,7 +13,7 @@ handlers:
 - url: /rest/.*
   script: main.APP
 
-- url: (.*)/
+- url: (.*)
   static_files: app\1/index.html
   upload: app
 
