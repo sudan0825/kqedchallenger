@@ -21,7 +21,6 @@
 #
 # ], debug=True)
 #
-#
 
 from flask import Flask
 app = Flask(__name__)
@@ -41,4 +40,3 @@ def hello():
 def page_not_found(e):
   """Return a custom 404 error."""
   return 'Sorry, nothing at this URL.', 404
-

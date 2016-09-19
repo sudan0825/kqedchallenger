@@ -13,7 +13,10 @@ var App = angular.module('myApp', [
 
 App.config(['$locationProvider', '$routeProvider',  function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
-
+  $routeProvider.when('/', {
+    templateUrl: 'home/home.html',
+    controller: 'myCtrl'
+  });
   $routeProvider.otherwise({redirectTo: '/home'});
 
 
