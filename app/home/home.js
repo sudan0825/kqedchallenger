@@ -15,7 +15,7 @@ angular.module('myApp.home', ['ngRoute'])
   $scope.stories=[];
   $http({
     method: 'GET',
-    url: 'http://api.npr.org/query?requiredAssets=text,image,audio&output=JSON&apiKey=MDI2NTE0OTQ5MDE0NzM3NDc0NDcyZGExMA000',
+    url: 'https://api.npr.org/query?requiredAssets=text,image,audio&output=JSON&apiKey=MDI2NTE0OTQ5MDE0NzM3NDc0NDcyZGExMA000',
     crossDomain:true,
     dataType:'jsonp',
     headers: {
